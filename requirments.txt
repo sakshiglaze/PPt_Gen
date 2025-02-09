@@ -1,0 +1,7 @@
+langchain
+streamlit
+os
+google.generativeai
+python-pptx
+pptx.util
+pptx
