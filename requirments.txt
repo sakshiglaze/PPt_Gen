@@ -1,4 +1,9 @@
-langchain>=0.1.0,<0.2.0
-streamlit>=1.31.0
-google-generativeai==0.3.2
-python-pptx>=0.6.21
+langchain
+streamlit
+google.generativeai
+python-pptx
+pptx.util
+pptx
+typing
+dataclasses
+logging
