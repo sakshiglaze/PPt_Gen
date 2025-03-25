@@ -1,6 +1,6 @@
 import streamlit as st
 import google.generativeai as genai
-import config
+# import config
 from pptx import Presentation
 from pptx.util import Inches, Pt
 from pptx.enum.text import PP_ALIGN
@@ -10,7 +10,7 @@ import os
 
 
 def configure():
-    os.environ["GOOGLE_API_KEY"] = config.google_api_key
+    os.environ["GOOGLE_API_KEY"] = st.secrets['google_api_key']
     genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
     model = genai.GenerativeModel('gemini-pro')
     return model
